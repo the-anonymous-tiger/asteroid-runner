@@ -1,0 +1,21 @@
+{
+	"color": "#ffffffff",
+	"description": "",
+	"display_name": "",
+	"display_name_bool": false,
+	"id": "character-1700934147.json",
+	"mirror_portraits": false,
+	"name": "Parveen",
+	"nickname": "",
+	"nickname_bool": false,
+	"offset_x": -50,
+	"offset_y": -200,
+	"portraits": [
+		{
+			"name": "Default",
+			"path": "res://assets/textures/player/Admiral.png"
+		}
+	],
+	"scale": 150,
+	"theme": ""
+}

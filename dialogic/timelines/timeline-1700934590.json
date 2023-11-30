@@ -1,0 +1,95 @@
+{
+	"events": [
+		{
+			"animation": "1-fade_in.gd",
+			"animation_length": 0.5,
+			"animation_wait": true,
+			"change_mirror_portrait": false,
+			"change_z_index": false,
+			"character": "character-1700934147.json",
+			"event_id": "dialogic_002",
+			"mirror_portrait": false,
+			"portrait": "Default",
+			"portrait_definition": "",
+			"position": {
+				"0": true,
+				"1": false,
+				"2": false,
+				"3": false,
+				"4": false
+			},
+			"type": 0,
+			"z_index": 1
+		},
+		{
+			"character": "character-1700934147.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Welcome  [color=#d96d1d]Smuggler[/color], you must be anxious to hear what I need from you!"
+		},
+		{
+			"character": "character-1700934147.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "I need you to collect precious minerals from the Sharmon 5 asteroid belt. It won't be and easy task, they are well guarded by the Corporation.\n\nYou should expect heavy resistance from ground and figther based weapons."
+		},
+		{
+			"character": "character-1700934147.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "I will pay you [color=#d96d1d]200[/color] for each mineral and to sweeten the deal you will be paid for every Corporation member you take out."
+		},
+		{
+			"character": "character-1700934147.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Don't forget your shrink ray, you will need it to fit in tight caverns."
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "CONTROLS:\nShip movement [color=#d96d1d]WASD[/color] or [color=#d96d1d]arrow keys[/color]\nCannons [color=#d96d1d]space[/color]\nShrink ray [color=#d96d1d]shift[/color]"
+		},
+		{
+			"character": "character-1700934147.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Good luck!"
+		},
+		{
+			"animation": "4-fade_out.gd",
+			"animation_length": 1,
+			"change_mirror_portrait": false,
+			"change_z_index": false,
+			"character": "character-1700934147.json",
+			"event_id": "dialogic_002",
+			"mirror_portrait": false,
+			"portrait": "",
+			"portrait_definition": "",
+			"position": {
+				"0": false,
+				"1": false,
+				"2": false,
+				"3": false,
+				"4": false
+			},
+			"type": 1,
+			"z_index": 0
+		},
+		{
+			"event_id": "dialogic_023",
+			"hide_dialogbox": true,
+			"wait_seconds": 1
+		},
+		{
+			"change_scene": "res://scenes/game.tscn",
+			"event_id": "dialogic_041"
+		}
+	],
+	"metadata": {
+		"dialogic-version": "1.5",
+		"file": "timeline-1700934590.json",
+		"name": "Parveen-timeline"
+	}
+}

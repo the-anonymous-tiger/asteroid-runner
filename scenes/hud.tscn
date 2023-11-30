@@ -1,0 +1,64 @@
+[gd_scene load_steps=9 format=2]
+
+[ext_resource path="res://assets/textures/ui/pause_button_pressed.png" type="Texture" id=1]
+[ext_resource path="res://assets/textures/ui/Crew_Icon-red.png" type="Texture" id=2]
+[ext_resource path="res://assets/textures/ui/pause_button.png" type="Texture" id=3]
+[ext_resource path="res://assets/font/bold.tres" type="DynamicFont" id=4]
+[ext_resource path="res://scripts/hud.gd" type="Script" id=5]
+[ext_resource path="res://assets/font/GravityRegular5.ttf" type="DynamicFontData" id=6]
+
+[sub_resource type="DynamicFont" id=2]
+size = 12
+font_data = ExtResource( 6 )
+
+[sub_resource type="DynamicFont" id=3]
+size = 12
+font_data = ExtResource( 6 )
+
+[node name="HUD" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 5 )
+
+[node name="Score" type="Label" parent="."]
+margin_left = 4.0
+margin_right = 124.0
+margin_bottom = 24.0
+custom_fonts/font = ExtResource( 4 )
+text = "score: 9999"
+valign = 1
+uppercase = true
+
+[node name="LifeTextureRect" type="TextureRect" parent="."]
+margin_left = 6.0
+margin_top = 26.0
+margin_right = 22.0
+margin_bottom = 42.0
+rect_scale = Vector2( 1.2, 1.2 )
+texture = ExtResource( 2 )
+
+[node name="X" type="Label" parent="."]
+margin_left = 28.0
+margin_top = 29.0
+margin_right = 42.0
+margin_bottom = 43.0
+custom_fonts/font = SubResource( 2 )
+text = "X"
+
+[node name="LivesLeft" type="Label" parent="."]
+margin_left = 44.0
+margin_top = 29.0
+margin_right = 56.0
+margin_bottom = 43.0
+custom_fonts/font = SubResource( 3 )
+text = "3"
+
+[node name="TextureButton" type="TextureButton" parent="."]
+margin_left = 627.0
+margin_top = 11.0
+margin_right = 643.0
+margin_bottom = 27.0
+texture_normal = ExtResource( 3 )
+texture_pressed = ExtResource( 1 )
+
+[connection signal="pressed" from="TextureButton" to="." method="_on_texture_button_pressed"]
